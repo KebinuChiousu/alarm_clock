@@ -1,0 +1,8 @@
+obj
+bin
+x64
+x86
+packages
+*.vbproj.user
+*.suo
+*.zip
