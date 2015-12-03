@@ -13,7 +13,7 @@ Public Class frmMain
     Friend WithEvents tbProgress As System.Windows.Forms.TrackBar
     Friend WithEvents btnNext As System.Windows.Forms.Button
     Friend WithEvents cmdPrev As System.Windows.Forms.Button
-    Friend WithEvents ScrollingText1 As ScrollingText.ScrollingText
+    Friend WithEvents ScrollingText1 As ScrollingText
 
     Dim WithEvents SysVol As New Sound
 
@@ -94,53 +94,53 @@ Public Class frmMain
     Friend WithEvents ofdBrowse As System.Windows.Forms.OpenFileDialog
     Friend WithEvents btnReset As System.Windows.Forms.Button
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.MainMenu1 = New System.Windows.Forms.MainMenu(Me.components)
-        Me.mnuFile = New System.Windows.Forms.MenuItem
-        Me.mnuFileMinTray = New System.Windows.Forms.MenuItem
-        Me.MenuItem3 = New System.Windows.Forms.MenuItem
-        Me.mnuFileExit = New System.Windows.Forms.MenuItem
-        Me.MenuItem1 = New System.Windows.Forms.MenuItem
-        Me.mnuSavePre = New System.Windows.Forms.MenuItem
-        Me.mnuLoadPre = New System.Windows.Forms.MenuItem
-        Me.lblClock = New System.Windows.Forms.Label
-        Me.lblAlarmSetFor = New System.Windows.Forms.Label
-        Me.lblAlarmTimeDisp = New System.Windows.Forms.Label
+        Me.mnuFile = New System.Windows.Forms.MenuItem()
+        Me.mnuFileMinTray = New System.Windows.Forms.MenuItem()
+        Me.MenuItem3 = New System.Windows.Forms.MenuItem()
+        Me.mnuFileExit = New System.Windows.Forms.MenuItem()
+        Me.MenuItem1 = New System.Windows.Forms.MenuItem()
+        Me.mnuSavePre = New System.Windows.Forms.MenuItem()
+        Me.mnuLoadPre = New System.Windows.Forms.MenuItem()
+        Me.lblClock = New System.Windows.Forms.Label()
+        Me.lblAlarmSetFor = New System.Windows.Forms.Label()
+        Me.lblAlarmTimeDisp = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.ntfSysTray = New System.Windows.Forms.NotifyIcon(Me.components)
-        Me.lblAlarmTime = New System.Windows.Forms.Label
-        Me.btnApply = New System.Windows.Forms.Button
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox
-        Me.chkLoop = New System.Windows.Forms.CheckBox
-        Me.chkRepeat = New System.Windows.Forms.CheckBox
-        Me.numRepeat = New System.Windows.Forms.NumericUpDown
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.btnReset = New System.Windows.Forms.Button
-        Me.radAM = New System.Windows.Forms.RadioButton
-        Me.radPM = New System.Windows.Forms.RadioButton
-        Me.cmbMinute = New System.Windows.Forms.ComboBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.cmbHour = New System.Windows.Forms.ComboBox
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.btnTest = New System.Windows.Forms.Button
-        Me.btnBrowse = New System.Windows.Forms.Button
-        Me.txtSoundFile = New System.Windows.Forms.TextBox
-        Me.ofdBrowse = New System.Windows.Forms.OpenFileDialog
-        Me.btnStop = New System.Windows.Forms.Button
-        Me.sfdSave = New System.Windows.Forms.SaveFileDialog
-        Me.dlgFile = New System.Windows.Forms.OpenFileDialog
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox
-        Me.ScrollingText1 = New ScrollingText.ScrollingText
-        Me.cmdPrev = New System.Windows.Forms.Button
-        Me.btnNext = New System.Windows.Forms.Button
-        Me.lblTime = New System.Windows.Forms.Label
-        Me.cmdPause = New System.Windows.Forms.Button
-        Me.cmdPlay = New System.Windows.Forms.Button
-        Me.cmdStop = New System.Windows.Forms.Button
-        Me.tbProgress = New System.Windows.Forms.TrackBar
-        Me.windowsMediaPlayer = New AxWMPLib.AxWindowsMediaPlayer
+        Me.lblAlarmTime = New System.Windows.Forms.Label()
+        Me.btnApply = New System.Windows.Forms.Button()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.chkLoop = New System.Windows.Forms.CheckBox()
+        Me.chkRepeat = New System.Windows.Forms.CheckBox()
+        Me.numRepeat = New System.Windows.Forms.NumericUpDown()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnReset = New System.Windows.Forms.Button()
+        Me.radAM = New System.Windows.Forms.RadioButton()
+        Me.radPM = New System.Windows.Forms.RadioButton()
+        Me.cmbMinute = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.cmbHour = New System.Windows.Forms.ComboBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnTest = New System.Windows.Forms.Button()
+        Me.btnBrowse = New System.Windows.Forms.Button()
+        Me.txtSoundFile = New System.Windows.Forms.TextBox()
+        Me.ofdBrowse = New System.Windows.Forms.OpenFileDialog()
+        Me.btnStop = New System.Windows.Forms.Button()
+        Me.sfdSave = New System.Windows.Forms.SaveFileDialog()
+        Me.dlgFile = New System.Windows.Forms.OpenFileDialog()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.ScrollingText1 = New ScrollingText()
+        Me.cmdPrev = New System.Windows.Forms.Button()
+        Me.btnNext = New System.Windows.Forms.Button()
+        Me.lblTime = New System.Windows.Forms.Label()
+        Me.cmdPause = New System.Windows.Forms.Button()
+        Me.cmdPlay = New System.Windows.Forms.Button()
+        Me.cmdStop = New System.Windows.Forms.Button()
+        Me.tbProgress = New System.Windows.Forms.TrackBar()
+        Me.windowsMediaPlayer = New AxWMPLib.AxWindowsMediaPlayer()
         Me.GroupBox2.SuspendLayout()
         CType(Me.numRepeat, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -197,9 +197,9 @@ Public Class frmMain
         Me.lblClock.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.lblClock.Font = New System.Drawing.Font("Comic Sans MS", 36.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblClock.ForeColor = System.Drawing.Color.Lime
-        Me.lblClock.Location = New System.Drawing.Point(16, 8)
+        Me.lblClock.Location = New System.Drawing.Point(19, 9)
         Me.lblClock.Name = "lblClock"
-        Me.lblClock.Size = New System.Drawing.Size(336, 64)
+        Me.lblClock.Size = New System.Drawing.Size(403, 74)
         Me.lblClock.TabIndex = 0
         Me.lblClock.Text = "88:88 PM"
         Me.lblClock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -208,9 +208,9 @@ Public Class frmMain
         '
         Me.lblAlarmSetFor.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.lblAlarmSetFor.ForeColor = System.Drawing.Color.Red
-        Me.lblAlarmSetFor.Location = New System.Drawing.Point(88, 88)
+        Me.lblAlarmSetFor.Location = New System.Drawing.Point(106, 102)
         Me.lblAlarmSetFor.Name = "lblAlarmSetFor"
-        Me.lblAlarmSetFor.Size = New System.Drawing.Size(104, 24)
+        Me.lblAlarmSetFor.Size = New System.Drawing.Size(124, 27)
         Me.lblAlarmSetFor.TabIndex = 1
         Me.lblAlarmSetFor.Text = "ALARM SET FOR:"
         Me.lblAlarmSetFor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -220,9 +220,9 @@ Public Class frmMain
         Me.lblAlarmTimeDisp.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.lblAlarmTimeDisp.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAlarmTimeDisp.ForeColor = System.Drawing.Color.Red
-        Me.lblAlarmTimeDisp.Location = New System.Drawing.Point(192, 88)
+        Me.lblAlarmTimeDisp.Location = New System.Drawing.Point(230, 102)
         Me.lblAlarmTimeDisp.Name = "lblAlarmTimeDisp"
-        Me.lblAlarmTimeDisp.Size = New System.Drawing.Size(88, 24)
+        Me.lblAlarmTimeDisp.Size = New System.Drawing.Size(106, 27)
         Me.lblAlarmTimeDisp.TabIndex = 2
         Me.lblAlarmTimeDisp.Text = "Not Set"
         Me.lblAlarmTimeDisp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -239,9 +239,9 @@ Public Class frmMain
         '
         'lblAlarmTime
         '
-        Me.lblAlarmTime.Location = New System.Drawing.Point(16, 88)
+        Me.lblAlarmTime.Location = New System.Drawing.Point(19, 102)
         Me.lblAlarmTime.Name = "lblAlarmTime"
-        Me.lblAlarmTime.Size = New System.Drawing.Size(64, 24)
+        Me.lblAlarmTime.Size = New System.Drawing.Size(77, 27)
         Me.lblAlarmTime.TabIndex = 3
         Me.lblAlarmTime.Text = "Real Time (sec)"
         Me.lblAlarmTime.Visible = False
@@ -249,9 +249,9 @@ Public Class frmMain
         'btnApply
         '
         Me.btnApply.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnApply.Location = New System.Drawing.Point(264, 240)
+        Me.btnApply.Location = New System.Drawing.Point(317, 277)
         Me.btnApply.Name = "btnApply"
-        Me.btnApply.Size = New System.Drawing.Size(72, 24)
+        Me.btnApply.Size = New System.Drawing.Size(86, 28)
         Me.btnApply.TabIndex = 14
         Me.btnApply.Text = "Apply"
         '
@@ -268,9 +268,9 @@ Public Class frmMain
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.cmbHour)
-        Me.GroupBox2.Location = New System.Drawing.Point(16, 224)
+        Me.GroupBox2.Location = New System.Drawing.Point(19, 258)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(336, 80)
+        Me.GroupBox2.Size = New System.Drawing.Size(403, 93)
         Me.GroupBox2.TabIndex = 13
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Alarm Time"
@@ -278,9 +278,9 @@ Public Class frmMain
         'chkLoop
         '
         Me.chkLoop.AutoSize = True
-        Me.chkLoop.Location = New System.Drawing.Point(12, 62)
+        Me.chkLoop.Location = New System.Drawing.Point(14, 72)
         Me.chkLoop.Name = "chkLoop"
-        Me.chkLoop.Size = New System.Drawing.Size(50, 17)
+        Me.chkLoop.Size = New System.Drawing.Size(62, 21)
         Me.chkLoop.TabIndex = 10
         Me.chkLoop.Text = "Loop"
         Me.chkLoop.UseVisualStyleBackColor = True
@@ -288,81 +288,81 @@ Public Class frmMain
         'chkRepeat
         '
         Me.chkRepeat.AutoSize = True
-        Me.chkRepeat.Location = New System.Drawing.Point(12, 43)
+        Me.chkRepeat.Location = New System.Drawing.Point(14, 50)
         Me.chkRepeat.Name = "chkRepeat"
-        Me.chkRepeat.Size = New System.Drawing.Size(15, 14)
+        Me.chkRepeat.Size = New System.Drawing.Size(18, 17)
         Me.chkRepeat.TabIndex = 9
         Me.chkRepeat.UseVisualStyleBackColor = True
         '
         'numRepeat
         '
-        Me.numRepeat.Location = New System.Drawing.Point(103, 40)
+        Me.numRepeat.Location = New System.Drawing.Point(124, 46)
         Me.numRepeat.Maximum = New Decimal(New Integer() {20, 0, 0, 0})
         Me.numRepeat.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.numRepeat.Name = "numRepeat"
-        Me.numRepeat.Size = New System.Drawing.Size(40, 20)
+        Me.numRepeat.Size = New System.Drawing.Size(48, 22)
         Me.numRepeat.TabIndex = 8
         Me.numRepeat.Value = New Decimal(New Integer() {10, 0, 0, 0})
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(26, 43)
+        Me.Label3.Location = New System.Drawing.Point(31, 50)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(163, 13)
+        Me.Label3.Size = New System.Drawing.Size(215, 17)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Repeat Every:                 Minutes"
         '
         'btnReset
         '
         Me.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnReset.Location = New System.Drawing.Point(248, 48)
+        Me.btnReset.Location = New System.Drawing.Point(298, 55)
         Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(72, 24)
+        Me.btnReset.Size = New System.Drawing.Size(86, 28)
         Me.btnReset.TabIndex = 6
         Me.btnReset.Text = "Reset"
         '
         'radAM
         '
         Me.radAM.Checked = True
-        Me.radAM.Location = New System.Drawing.Point(200, 14)
+        Me.radAM.Location = New System.Drawing.Point(240, 16)
         Me.radAM.Name = "radAM"
-        Me.radAM.Size = New System.Drawing.Size(42, 16)
+        Me.radAM.Size = New System.Drawing.Size(50, 19)
         Me.radAM.TabIndex = 5
         Me.radAM.TabStop = True
         Me.radAM.Text = "AM"
         '
         'radPM
         '
-        Me.radPM.Location = New System.Drawing.Point(200, 30)
+        Me.radPM.Location = New System.Drawing.Point(240, 35)
         Me.radPM.Name = "radPM"
-        Me.radPM.Size = New System.Drawing.Size(42, 16)
+        Me.radPM.Size = New System.Drawing.Size(50, 18)
         Me.radPM.TabIndex = 4
         Me.radPM.Text = "PM"
         '
         'cmbMinute
         '
         Me.cmbMinute.Items.AddRange(New Object() {"00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55"})
-        Me.cmbMinute.Location = New System.Drawing.Point(144, 17)
+        Me.cmbMinute.Location = New System.Drawing.Point(173, 20)
         Me.cmbMinute.Name = "cmbMinute"
-        Me.cmbMinute.Size = New System.Drawing.Size(40, 21)
+        Me.cmbMinute.Size = New System.Drawing.Size(48, 24)
         Me.cmbMinute.TabIndex = 3
         Me.cmbMinute.Text = "00"
         '
         'Label2
         '
-        Me.Label2.Location = New System.Drawing.Point(96, 18)
+        Me.Label2.Location = New System.Drawing.Point(115, 21)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(48, 16)
+        Me.Label2.Size = New System.Drawing.Size(58, 18)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Minute:"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label1
         '
-        Me.Label1.Location = New System.Drawing.Point(8, 18)
+        Me.Label1.Location = New System.Drawing.Point(10, 21)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(34, 19)
+        Me.Label1.Size = New System.Drawing.Size(40, 22)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Hour:"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -370,9 +370,9 @@ Public Class frmMain
         'cmbHour
         '
         Me.cmbHour.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"})
-        Me.cmbHour.Location = New System.Drawing.Point(48, 17)
+        Me.cmbHour.Location = New System.Drawing.Point(58, 20)
         Me.cmbHour.Name = "cmbHour"
-        Me.cmbHour.Size = New System.Drawing.Size(40, 21)
+        Me.cmbHour.Size = New System.Drawing.Size(48, 24)
         Me.cmbHour.TabIndex = 0
         Me.cmbHour.Text = "12"
         '
@@ -381,9 +381,9 @@ Public Class frmMain
         Me.GroupBox1.Controls.Add(Me.btnTest)
         Me.GroupBox1.Controls.Add(Me.btnBrowse)
         Me.GroupBox1.Controls.Add(Me.txtSoundFile)
-        Me.GroupBox1.Location = New System.Drawing.Point(16, 120)
+        Me.GroupBox1.Location = New System.Drawing.Point(19, 138)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(336, 96)
+        Me.GroupBox1.Size = New System.Drawing.Size(403, 111)
         Me.GroupBox1.TabIndex = 12
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Choose Sound File"
@@ -392,26 +392,26 @@ Public Class frmMain
         '
         Me.btnTest.Enabled = False
         Me.btnTest.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnTest.Location = New System.Drawing.Point(176, 56)
+        Me.btnTest.Location = New System.Drawing.Point(211, 65)
         Me.btnTest.Name = "btnTest"
-        Me.btnTest.Size = New System.Drawing.Size(144, 24)
+        Me.btnTest.Size = New System.Drawing.Size(173, 27)
         Me.btnTest.TabIndex = 2
         Me.btnTest.Text = "Test Sound"
         '
         'btnBrowse
         '
         Me.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnBrowse.Location = New System.Drawing.Point(16, 56)
+        Me.btnBrowse.Location = New System.Drawing.Point(19, 65)
         Me.btnBrowse.Name = "btnBrowse"
-        Me.btnBrowse.Size = New System.Drawing.Size(144, 24)
+        Me.btnBrowse.Size = New System.Drawing.Size(173, 27)
         Me.btnBrowse.TabIndex = 1
         Me.btnBrowse.Text = "Browse..."
         '
         'txtSoundFile
         '
-        Me.txtSoundFile.Location = New System.Drawing.Point(16, 24)
+        Me.txtSoundFile.Location = New System.Drawing.Point(19, 28)
         Me.txtSoundFile.Name = "txtSoundFile"
-        Me.txtSoundFile.Size = New System.Drawing.Size(304, 20)
+        Me.txtSoundFile.Size = New System.Drawing.Size(365, 22)
         Me.txtSoundFile.TabIndex = 0
         Me.txtSoundFile.Text = "Please select a Audio file"
         '
@@ -419,9 +419,9 @@ Public Class frmMain
         '
         Me.btnStop.Enabled = False
         Me.btnStop.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnStop.Location = New System.Drawing.Point(288, 88)
+        Me.btnStop.Location = New System.Drawing.Point(346, 102)
         Me.btnStop.Name = "btnStop"
-        Me.btnStop.Size = New System.Drawing.Size(64, 24)
+        Me.btnStop.Size = New System.Drawing.Size(76, 27)
         Me.btnStop.TabIndex = 15
         Me.btnStop.Text = "Stop"
         '
@@ -439,20 +439,20 @@ Public Class frmMain
         Me.GroupBox3.Controls.Add(Me.cmdPlay)
         Me.GroupBox3.Controls.Add(Me.cmdStop)
         Me.GroupBox3.Controls.Add(Me.tbProgress)
-        Me.GroupBox3.Location = New System.Drawing.Point(16, 311)
+        Me.GroupBox3.Location = New System.Drawing.Point(19, 359)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(336, 120)
+        Me.GroupBox3.Size = New System.Drawing.Size(403, 138)
         Me.GroupBox3.TabIndex = 17
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Sound File Info"
         '
         'ScrollingText1
         '
-        Me.ScrollingText1.Location = New System.Drawing.Point(7, 91)
+        Me.ScrollingText1.Location = New System.Drawing.Point(8, 105)
         Me.ScrollingText1.Name = "ScrollingText1"
         Me.ScrollingText1.ScrollingTextColor1 = System.Drawing.Color.Black
         Me.ScrollingText1.ScrollingTextColor2 = System.Drawing.Color.Black
-        Me.ScrollingText1.Size = New System.Drawing.Size(313, 23)
+        Me.ScrollingText1.Size = New System.Drawing.Size(376, 27)
         Me.ScrollingText1.TabIndex = 15
         '
         'cmdPrev
@@ -460,9 +460,9 @@ Public Class frmMain
         Me.cmdPrev.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.cmdPrev.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.cmdPrev.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.cmdPrev.Location = New System.Drawing.Point(6, 60)
+        Me.cmdPrev.Location = New System.Drawing.Point(7, 69)
         Me.cmdPrev.Name = "cmdPrev"
-        Me.cmdPrev.Size = New System.Drawing.Size(32, 24)
+        Me.cmdPrev.Size = New System.Drawing.Size(39, 28)
         Me.cmdPrev.TabIndex = 14
         Me.cmdPrev.Text = "<<"
         Me.cmdPrev.UseVisualStyleBackColor = False
@@ -472,9 +472,9 @@ Public Class frmMain
         Me.btnNext.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnNext.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.btnNext.Location = New System.Drawing.Point(161, 61)
+        Me.btnNext.Location = New System.Drawing.Point(193, 70)
         Me.btnNext.Name = "btnNext"
-        Me.btnNext.Size = New System.Drawing.Size(32, 24)
+        Me.btnNext.Size = New System.Drawing.Size(39, 28)
         Me.btnNext.TabIndex = 13
         Me.btnNext.Text = ">>"
         Me.btnNext.UseVisualStyleBackColor = False
@@ -482,14 +482,14 @@ Public Class frmMain
         'lblTime
         '
         Me.lblTime.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblTime.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.lblTime.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblTime.Font = New System.Drawing.Font("Courier New", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
         Me.lblTime.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.lblTime.Location = New System.Drawing.Point(200, 62)
+        Me.lblTime.Location = New System.Drawing.Point(240, 72)
         Me.lblTime.Name = "lblTime"
-        Me.lblTime.Size = New System.Drawing.Size(120, 22)
+        Me.lblTime.Size = New System.Drawing.Size(144, 25)
         Me.lblTime.TabIndex = 12
         Me.lblTime.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
@@ -498,9 +498,9 @@ Public Class frmMain
         Me.cmdPause.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.cmdPause.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.cmdPause.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.cmdPause.Location = New System.Drawing.Point(123, 61)
+        Me.cmdPause.Location = New System.Drawing.Point(148, 70)
         Me.cmdPause.Name = "cmdPause"
-        Me.cmdPause.Size = New System.Drawing.Size(32, 24)
+        Me.cmdPause.Size = New System.Drawing.Size(38, 28)
         Me.cmdPause.TabIndex = 11
         Me.cmdPause.Text = "||"
         Me.cmdPause.UseVisualStyleBackColor = False
@@ -510,9 +510,9 @@ Public Class frmMain
         Me.cmdPlay.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.cmdPlay.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.cmdPlay.Font = New System.Drawing.Font("Wingdings 3", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(2, Byte))
-        Me.cmdPlay.Location = New System.Drawing.Point(83, 61)
+        Me.cmdPlay.Location = New System.Drawing.Point(100, 70)
         Me.cmdPlay.Name = "cmdPlay"
-        Me.cmdPlay.Size = New System.Drawing.Size(32, 24)
+        Me.cmdPlay.Size = New System.Drawing.Size(38, 28)
         Me.cmdPlay.TabIndex = 10
         Me.cmdPlay.Text = "u"
         Me.cmdPlay.UseVisualStyleBackColor = False
@@ -522,9 +522,9 @@ Public Class frmMain
         Me.cmdStop.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.cmdStop.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.cmdStop.Font = New System.Drawing.Font("Wingdings", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(2, Byte))
-        Me.cmdStop.Location = New System.Drawing.Point(43, 61)
+        Me.cmdStop.Location = New System.Drawing.Point(52, 70)
         Me.cmdStop.Name = "cmdStop"
-        Me.cmdStop.Size = New System.Drawing.Size(32, 24)
+        Me.cmdStop.Size = New System.Drawing.Size(38, 28)
         Me.cmdStop.TabIndex = 9
         Me.cmdStop.Text = "n"
         Me.cmdStop.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -532,26 +532,26 @@ Public Class frmMain
         '
         'tbProgress
         '
-        Me.tbProgress.Location = New System.Drawing.Point(6, 15)
+        Me.tbProgress.Location = New System.Drawing.Point(7, 17)
         Me.tbProgress.Name = "tbProgress"
-        Me.tbProgress.Size = New System.Drawing.Size(314, 45)
+        Me.tbProgress.Size = New System.Drawing.Size(377, 56)
         Me.tbProgress.TabIndex = 0
         Me.tbProgress.TickFrequency = 5
         '
         'windowsMediaPlayer
         '
         Me.windowsMediaPlayer.Enabled = True
-        Me.windowsMediaPlayer.Location = New System.Drawing.Point(0, 46)
+        Me.windowsMediaPlayer.Location = New System.Drawing.Point(0, 53)
         Me.windowsMediaPlayer.Name = "windowsMediaPlayer"
         Me.windowsMediaPlayer.OcxState = CType(resources.GetObject("windowsMediaPlayer.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.windowsMediaPlayer.Size = New System.Drawing.Size(10, 26)
+        Me.windowsMediaPlayer.Size = New System.Drawing.Size(12, 30)
         Me.windowsMediaPlayer.TabIndex = 16
         Me.windowsMediaPlayer.Visible = False
         '
         'frmMain
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
-        Me.ClientSize = New System.Drawing.Size(365, 429)
+        Me.AutoScaleBaseSize = New System.Drawing.Size(6, 15)
+        Me.ClientSize = New System.Drawing.Size(431, 465)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.windowsMediaPlayer)
         Me.Controls.Add(Me.btnStop)

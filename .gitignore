@@ -2,6 +2,7 @@ obj
 bin
 x64
 x86
+.vs
 packages
 *.vbproj.user
 *.suo
