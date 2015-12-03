@@ -551,7 +551,7 @@ Public Class frmMain
         'frmMain
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(6, 15)
-        Me.ClientSize = New System.Drawing.Size(431, 465)
+        Me.ClientSize = New System.Drawing.Size(431, 504)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.windowsMediaPlayer)
         Me.Controls.Add(Me.btnStop)
